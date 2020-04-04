@@ -1,6 +1,6 @@
 <?php
 
-
+namespace App\Controller;
 class Index
 {
 
@@ -8,8 +8,9 @@ class Index
 
     public function indexAction()
     {
-        include "../Model/modelUser.php";
-        $this->view->modelUser = new modelUser();
+
+        $this->view->modelUser = new \App\Model\modelUser;
+        var_dump($this->view->modelUser);
     }
 
     public function mainAction()

@@ -1,9 +1,9 @@
 <?php
 
-
+namespace App\Model;
 class modelUser
 {
-    private $_id;
+    private $_id = 123;
 
     private $_name;
 
